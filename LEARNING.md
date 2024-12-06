@@ -13,5 +13,12 @@
     - code editor: VS code
     - browser: google crome
     - version control: Git and Github
+    - VS code extantion: live server,prettier code formitter
 
 6. Basic structure of HTML
+    - head, body
+7. Basic tags, Styling, Debuging
+    - Tags? type of tags.
+    - attribute
+    - elements, content
+    - Debuggins
