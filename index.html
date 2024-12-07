@@ -6,16 +6,124 @@
     <title>My Protfolio</title>
   </head>
   <body>
+    <!--Section: Navbar-->
+
+    <nav>
+      <ul>
+        <li>
+          <a href="#about">About Me</a>
+        </li>
+        <li>
+          <a href="#Skills">My Skills</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#Contact">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+    <hr />
+
     <!--Section: Intro-->
-    <header>
+    <header id="intro">
       <h1>MD IMRAN HOSSAN</h1>
-      <p>Web devoloper and lecturer computer in engeniaring</p>
+      <p>
+        <em>Web devoloper and lecturer computer in engeniaring</em>
+      </p>
+      <a href="https://www.youtube.com/@anisul-islam" target="_blank"><img src="./Images/Image.jpg" alt="MD IMRAN HOSSAN" height="150"></a>
     </header>
     <hr />
+
     <!--Section: about me-->
 
-    <!--Section: Skills-->
+    <section id="about">
+      <h2>About Me</h2>
+      <p><strong>Experience:</strong> 5 years experience in web devolopment</p>
+      <p><strong>Education:</strong> Master's in woftwear web and cloud computing</p>
+    </section>
+    
 
-    <!--Section: contacts-->
+    <!--Section: Skills-->
+    <section id="Skills">
+      <h2>Skills</h2>
+      <ul>
+        <table border="1" celadding="5" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Tecnologi</th>
+              <th>Proficiency</th>
+            </tr>
+            <tr>
+              <td>Tecnologi</td>
+              <td>Proficiency</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>Expart</td>
+            </tr>
+            <tr>
+              <td>JAVA</td>
+              <td>Typescript</td>
+            </tr>
+          </tbody>
+        </table>
+      </ul>
+
+      <dl>
+        <dt>HTML</dt>
+        <dd>HTML is a markup language</dd>
+      </dl>
+
+    </section>
+
+    <!--Section: projects-->
+    <section id="projects">
+      <h2>Project</h2>
+      <ol>
+        <li><a href="https://github.com/imran-nice/protfolio-html" target="_blank">protfoli website</a>
+        </li>
+        <li>Blog website</li>
+        <li>E-comarce website</li>
+
+      </ol>
+    </section>
+
+    
+     <!--Section: contacts-->
+     <section id="Contact">
+      <h2>Contace Me</h2>
+      <form>
+
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+        </div>
+       
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <div>
+          <label for="massage">Massage</label>
+          <textarea name="massage" id="massage" rows="10" cols="20"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+        <button type="reset">reset</button>
+      </form>
+     </section>
+     
+     <!--Section: footer-->
+     <footer>
+      <P>Copyright reserve by &copy; MD IMRAN; HOSSAN</P>
+      <p>Devolped with &hearts;</p>
+      <a href="tel:01686373631">Call Me </a>
+      <a href="mailto:imrannice@gmail.com">Email Me</a>
+     </footer>
   </body>
 </html>
