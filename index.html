@@ -1,50 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Protfolio</title>
+
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   <meta name="author" content="MD IMRAN HOSSAN">
+   <meta name="keywords" content="protfolio, html,Md imran hossan" />
+    
+  <title>My Protfolio</title>
+
+  <!-- Fontawsome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,  300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  
+    <style>
+      body{
+        background-color:rgb(217, 215, 213);
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+
   </head>
+
+
   <body>
     <!--Section: Navbar-->
 
-    <nav>
-      <ul>
-        <li>
-          <a href="#about">About Me</a>
-        </li>
-        <li>
-          <a href="#Skills">My Skills</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="#Contact">Contact Me</a>
-        </li>
-      </ul>
-    </nav>
-    <hr />
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about">About Me</a>
+          </li>
+          <li>
+            <a href="#Skills">My Skills</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#Contact">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <!--Section: Intro-->
-    <header id="intro">
+    <main>
+
+      <!--Section: Intro-->
+    <section id="intro">
       <h1>MD IMRAN HOSSAN</h1>
       <p>
         <em>Web devoloper and lecturer computer in engeniaring</em>
       </p>
       <a href="https://www.youtube.com/@anisul-islam" target="_blank"><img src="./Images/Image.jpg" alt="MD IMRAN HOSSAN" height="150"></a>
-    </header>
+    </section>
     <hr />
 
     <!--Section: about me-->
-
     <section id="about">
       <h2>About Me</h2>
       <p><strong>Experience:</strong> 5 years experience in web devolopment</p>
       <p><strong>Education:</strong> Master's in woftwear web and cloud computing</p>
     </section>
     
-
     <!--Section: Skills-->
     <section id="Skills">
       <h2>Skills</h2>
@@ -55,15 +79,14 @@
               <th>Tecnologi</th>
               <th>Proficiency</th>
             </tr>
-            <tr>
-              <td>Tecnologi</td>
-              <td>Proficiency</td>
-            </tr>
           </thead>
           <tbody>
             <tr>
               <td>HTML</td>
-              <td>Expart</td>
+              <td rowspan="2">Expart</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
             </tr>
             <tr>
               <td>JAVA</td>
@@ -71,8 +94,30 @@
             </tr>
           </tbody>
         </table>
-      </ul>
+       </ul>
 
+       <div>
+        <h3>Skill progress</h3>
+       <div>
+        <label for="htmlprogress">HTML:</label>
+        <progress id="htmlprogress" value="90" max="100">90%</progress>
+      </div>
+       <div>
+        <label for="cssprogress">CSS:</label>
+       <progress id="cssprogress" value="85" max="100">85%</progress>
+       </div>
+       <div>
+        <label for="jsprogress">Javascript:</label>
+       <progress id="jsprogress" value="75" max="100">75%</progress>
+       </div>
+       </div>
+
+       <div>
+        <h3>Experience Level</h3>
+        <lebel for="experiencelevel">Experience:</lebel>
+        <meter id="experiencelevel" min="0" max="10" value="5"></meter>
+       </div>
+       
       <dl>
         <dt>HTML</dt>
         <dd>HTML is a markup language</dd>
@@ -92,20 +137,52 @@
       </ol>
     </section>
 
-    
+    <video width="320" height="300" controls>
+      <source src="./assets/vedio/Imran vedio.mp4" type="video/mp4" />
+      your browser do not support
+    </video>
+
      <!--Section: contacts-->
      <section id="Contact">
       <h2>Contace Me</h2>
-      <form>
+      <form
+        action="https://formspree.io/f/mrbgvqza"
+        method="POST">
 
         <div>
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" />
+          <input type="text" id="name" name="name" required />
         </div>
        
         <div>
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" />
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div>
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" min="18" max="55" />
+        </div>
+
+        <div>
+          <label for="website">Website</label>
+          <input type="url" id="website" name="website" pattern="https?://.+">
+        </div>
+
+        <!--
+        <div>
+          <label for="image">Upload Image</label>
+          <input type="file" id="image" name="image" accept="image/*" />
+        </div>
+        -->
+
+        <div>
+          <label for="subject">Subject</label>
+          <select name="subject" id="subject">
+            <option value="subject">inquery</option>
+            <option value="feedback">feedback</option>
+            <option value="job">job circular</option>
+          </select>
         </div>
 
         <div>
@@ -117,13 +194,41 @@
         <button type="reset">reset</button>
       </form>
      </section>
-     
-     <!--Section: footer-->
+
+    </main>
+
+     <!--footer-->
      <footer>
       <P>Copyright reserve by &copy; MD IMRAN; HOSSAN</P>
       <p>Devolped with &hearts;</p>
       <a href="tel:01686373631">Call Me </a>
       <a href="mailto:imrannice@gmail.com">Email Me</a>
+
+      <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14595.424040823353!2d90.39118223602989!3d23.859246281631567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c42796fdc92b%3A0x4536aada85da7a3b!2sJashimuddin!5e0!3m2!1sen!2sbd!4v1733735160645!5m2!1sen!2sbd" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </iframe>
+
+      <div>
+        <h3>follow me</h3>
+      <ul>'
+        <li>
+          <a href="https://www.facebook.com/mdimranhossan.nice/"" target="_blank"><i class="fa-brands fa-facebook"></i>
+            Facebook 
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@anisul-islam" target="_blank"><i class="fa-brands fa-youtube"></i>
+            Youtube channel
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/md-imran-hossan-nice-b10714220/" target="_blank"><i class="fa-brands fa-linkedin"></i>
+            Linkdin profile
+          </a>
+        </li>
+      </ul>
+      </div>
+
      </footer>
   </body>
 </html>

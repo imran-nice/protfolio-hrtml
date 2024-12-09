@@ -1,5 +1,7 @@
 # HTML Learnings
 
+## Basic HTML
+
 1. How to website work
 
     - clints server model
@@ -39,3 +41,14 @@
 15. Basic table
 16. basic form
 17. deploy
+
+## Intermediate HTML
+
+- Meta tag & Seo
+- Adding fontawsome icons & google font
+- Advance table
+- Advance form
+- Front data send to your eamail
+- Multimedia
+- HTML5 emelents
+- deploy
