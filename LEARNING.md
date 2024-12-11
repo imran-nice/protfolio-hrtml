@@ -51,4 +51,22 @@
 - Front data send to your eamail
 - Multimedia
 - HTML5 emelents
-- deploy
+- deploy in netlify.com
+
+## Advance HTML
+
+- more advance form - <input type=color/range>
+    datalist, fildset, leagend
+- web accessibility
+    - use semantic tags
+    - use lang attribute
+    - use heading tag in order (h1->h2->h3)
+    - use alt attriibute for image
+    - contrast ratio
+    - use meaningful link text
+    - label (for) + input (id)
+    - meta tag: desc, keywords
+- HTML5 API
+- HTML Templates and web components
+- source of symbols, icons, emojis, colors
+- Learning resource
