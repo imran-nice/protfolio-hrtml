@@ -1,5 +1,7 @@
 # HTML Learnings
 
+### HTML
+
 ## Basic HTML
 
 1. How to website work
@@ -70,3 +72,29 @@
 - HTML Templates and web components
 - source of symbols, icons, emojis, colors
 - Learning resource
+
+
+
+### CSS
+
+## Basic CSS
+- introduction to CSS 
+- way to add CSS - inline css, internal css, extarnal css
+- CSS syntax, selectors
+- CSS3 variables
+- CSS specificity
+- Typography - font, text, color, icon
+- Box model (Mergin, padding, border, content)
+- design a card
+
+## Intermediate CSS
+- Background properties
+- Basic layout - display property - inline, block, inline-block, float, positining, flex, grid
+- how to make acircle
+- responsiveness
+
+## Advanced CSS
+- grid layout
+- transition
+- animation
+- BEM arcitecture
